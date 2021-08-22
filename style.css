@@ -41,6 +41,9 @@ nav {
     text-decoration: none;
     letter-spacing: 2px;
 }
+.icon_menu {
+    display: none;
+}
 .navigation a:hover {
     color:yellowgreen;
 }
@@ -48,7 +51,7 @@ nav {
     display: flex;
     height: 20px;
     padding-top: 50px;
-    padding-left: 650px;
+    padding-left: 550px;
 }
 .search_icon p {
     color: white;
@@ -192,3 +195,277 @@ margin-right: 4px;
     background: rgb(255, 255, 255);
 }
 
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slider {
+    padding: 100px 0 0 -330px;
+    height: 550px;
+}
+.slider_item {
+    opacity: 0.4;
+    padding-left: 215px;
+    padding-top: 120px;
+    outline: none;
+}
+.slider_item.slick-center {
+    opacity: 1;
+}
+.slider .slick-arrow {
+    position: absolute;
+    top: 20%;
+    z-index: 10;
+    font-size: 0;
+    height: 200px;
+    width: 100px;
+    border: none;
+}
+.slider .slick-arrow.slick-prev {
+    outline: none;
+    left: 100;
+    margin-top: 120px;
+    background: url(img/prev.png) 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+    outline: none;
+    right: 100;
+    margin-top: 120px;
+    background: url(img/next.png) 0 0 / 100% no-repeat;
+
+}
+
+
+
+
+@media screen and (max-width: 1700px) {
+    .navigation {
+        display: flex;
+        margin-top: 25px;
+    }
+    .search_icon {
+        padding-left: 300px;
+    }
+    .slider_item {
+        opacity: 0.4;
+        padding-left: 160px;
+        padding-top: 120px;
+        outline: none;
+    }
+}
+
+
+
+@media screen and (max-width: 1500px) {
+    .navigation {
+        display: flex;
+        margin-top: 25px;
+    }
+    .search_icon {
+        padding-left: 0;
+    }
+    .slider_item {
+        opacity: 0.4;
+        padding-left: 140px;
+        padding-top: 120px;
+        outline: none;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 5px;
+    }
+    .search_icon {
+        padding-left: 0;
+    }
+    .slider_item {
+        opacity: 0.4;
+        padding-left: 95px;
+        padding-top: 120px;
+        outline: none;
+    }
+    .slider .slick-arrow.slick-prev {
+        outline: none;
+        left: 20;
+        margin-top: 120px;
+        background: url(img/prev.png) 0 0 / 100% no-repeat;
+    }
+    .slider .slick-arrow.slick-next {
+        outline: none;
+        right: 20;
+        margin-top: 120px;
+        background: url(img/next.png) 0 0 / 100% no-repeat;
+    
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 5px;
+    }
+    .slider_item {
+        opacity: 0.4;
+        padding-left: 60px;
+        padding-top: 120px;
+        outline: none;
+    }
+    .slider .slick-arrow.slick-prev {
+        outline: none;
+        left: 20;
+        margin-top: 120px;
+        background: url(img/prev.png) 0 0 / 100% no-repeat;
+    }
+    .slider .slick-arrow.slick-next {
+        outline: none;
+        right: 20;
+        margin-top: 120px;
+        background: url(img/next.png) 0 0 / 100% no-repeat;
+    
+    }
+    .slider .slick-arrow {
+        position: absolute;
+        top: 25%;
+        z-index: 10;
+        font-size: 0;
+        height: 200px;
+        width: 60px;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .slider_item {
+        opacity: 0.4;
+        padding-left: 20px;
+        padding-top: 120px;
+        outline: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navigation {
+        margin-top: 5px;
+        width: 180px;
+    }
+    .navigation a {
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 5px;
+    }
+    .navigation .icon_menu {
+        margin-top: 20px;
+        display: block;
+        margin-left: 20px;
+    }
+    nav {
+        margin-left: -180px;
+    }
+    .search_icon {
+        margin-left: -95px;
+    }
+    .navigationresponsive {
+        display: grid;
+        margin-left: 70px;
+        width: 160px;
+    }
+    header .navigationresponsive {
+        height: 200px;
+    }
+    .navigationresponsive a {
+        text-decoration: none;
+        color: white;
+    }
+    .navigationresponsive a:hover {
+        color:yellowgreen;
+    }
+    .new_menu_upp {
+        height: 235px;
+    }
+    .bg_slider1 {
+        background: url(img/bg_qwe.jpg) 65% 10% no-repeat;
+    }
+    .bg_slider1 p {
+        font-size: 55px;
+        margin-left: -160px;
+        width: 100px;
+        line-height: 70px;
+        text-shadow: 0 0 10px gainsboro;
+        }
+    .bg_slider2 {
+        background: url(img/bg2\ new.jpg) 50% 20% no-repeat;
+    }
+    .bg_slider2 h2 {
+        font-size: 50px;
+        text-shadow: 0 0 10px black;
+        margin-left: -35px;
+    }
+    .bg_slider2 p {
+        font-size: 20px;
+        color: white;
+        margin-left: -60px;
+        width: 350px;
+        text-shadow: 0 0 10px black;
+    }
+    .gallery_1, .gallery_2, .gallery_3, .gallery_4, .gallery_7 {
+        display: none;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: -5px;
+        margin-bottom: -50px;
+        grid-row-gap: 70px;
+    }
+    .features {
+        height: 1070px;
+    }
+    .gallery_5 p {
+        margin-bottom: -20px;
+        width: 230px;
+        margin-left: 90px;
+    }
+    .gallery_6 p {
+        margin-bottom: -20px;
+    }
+    .gallery_8 p {
+        margin-bottom: -20px;
+    }
+    .end {
+        height: 850px;
+        background: #000;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: -210px;
+    }
+    .end_image {
+        margin-top: 20px;
+    }
+    .button_go {
+        margin-top: 20px;
+    }
+    .flex-copy {
+        margin-top: 0;
+    }
+    .div_none {
+        display: none;
+    }
+    .slider_item {
+        opacity: 0.4;
+        padding-left: 70px;
+        padding-top: 120px;
+        outline: none;
+    }
+}
